@@ -25,7 +25,7 @@ So apart from mysqli object everything is static in this case.
 - Repositories in theory should be separate one for each database table (or document collection, or anything), though we also had some specific ones for example just for transmuting old data to new format, or doing some specific calculations by collecting stuff from all over the place.
   - Main idea is that they separate data storage from usage.
   - We had some data migrate from MySQL to Mongo to JSON file cache to Redis, all with just changing the repository class. Models / controllers / etc doesn't care where or how the data is stored.
-- Very _smol_ bootloader / config class
+- Very _smol_ autoloader / config class
 - Tried implementing something similar to Twig, just to keep separation between front and back. But it's pretty crude.
 
 # In summary #
